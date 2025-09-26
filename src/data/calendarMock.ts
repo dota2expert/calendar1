@@ -1,4 +1,4 @@
-import type { DayData, Norms } from "../types/calendar";
+import type { DayData, Norms } from "../types/ClearCalendar/calendar";
 
 export const norms: Norms = {
     B1: { daily: 100, weekly: 500 },

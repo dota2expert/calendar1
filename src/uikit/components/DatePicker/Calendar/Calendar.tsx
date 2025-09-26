@@ -2,7 +2,7 @@ import { type FC } from "react";
 import "../../../styles/Calendar.scss";
 import CalendarUI from "react-calendar";
 import { format } from 'date-fns';
-import type { DayData, Norms } from "../../../../types/calendar";
+import type { DayData, Norms } from "../../../../types/ClearCalendar/calendar";
 import { ProgressBar } from "./ProgressBar";
 import type { TCalendarValue } from "../../../../types/types";
 

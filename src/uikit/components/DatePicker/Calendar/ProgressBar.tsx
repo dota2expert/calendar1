@@ -12,7 +12,7 @@ export const ProgressBar: FC<ProgressBarProps> = ({ label, fact, norm }) => {
 
   let colorClass = "no-norm"; 
   if (norm > 0) {
-    if (loadFactor < 0.9) colorClass = "low";
+    if (loadFactor < 0.9) colorClass = "low"; 
     else if (loadFactor >= 0.9 && loadFactor < 1) colorClass = "medium";
     else if (loadFactor >= 1 && loadFactor < 1.1) colorClass = "high";
     else colorClass = "very-high"; 

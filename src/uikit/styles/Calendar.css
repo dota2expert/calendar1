@@ -147,7 +147,6 @@
   border-color: #ff6b00;
 }
 
-/* Убираем старый has-data, теперь цвет будет зависеть от уровня загрузки */
 .calendar-cell.has-data {
   background: #f8f8f8;
 }
@@ -155,7 +154,7 @@
 .day-header {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 2px; /* Уменьшаем отступ */
+  margin-bottom: 2px; 
 }
 
 .day-number {
@@ -176,17 +175,17 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Прижимаем контент к низу */
+  justify-content: flex-end; 
   min-height: 0;
-  gap: 2px; /* Минимальный отступ между метрами и прогресс-баром */
+  gap: 2px; 
 }
 
 .day-value {
-  font-size: 11px; /* Чуть меньший шрифт */
+  font-size: 11px;
   font-weight: 600;
   color: #333;
   text-align: center;
-  margin: 0; /* Убираем margin */
+  margin: 0; 
   line-height: 1.2;
 }
 
