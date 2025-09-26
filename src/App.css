@@ -1,0 +1,35 @@
+/* App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.calendars-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1900px;
+}
+
+.calendar-section {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.calendar-section:first-child {
+  flex: 0 0 400px;
+}
+
+.calendar-section:last-child {
+  flex: 1;
+  min-width: 1500px;
+  min-height: 600px;
+}

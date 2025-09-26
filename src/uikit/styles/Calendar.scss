@@ -1,0 +1,190 @@
+.calendar-with-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 300px;
+  background-color: #1a1a1a;
+  padding: 15px;
+  border: 1px solid #444;
+
+  .react-calendar {
+    width: 100%;
+    background: #2d2d2d;
+    border: 1px solid #444;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    &__navigation {
+      display: flex;
+      margin-bottom: 15px;
+      
+      button {
+        background: #444;
+        border: 1px solid #555;
+        padding: 5px 10px;
+        margin: 0 2px;
+        color: #fff;
+        border-radius: 0; 
+        
+        &:hover {
+          background: #555;
+        }
+        
+        &:disabled {
+          background: #333;
+          color: #777;
+        }
+      }
+      
+      &__label {
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 0; 
+      }
+    }
+    
+    &__month-view {
+      &__weekdays {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ccc;
+        
+        &__weekday {
+          padding: 8px 0;
+          text-align: center;
+          
+          abbr {
+            text-decoration: none;
+            color: #ccc;
+          }
+        }
+      }
+      
+      &__days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0;
+        
+        button {
+          aspect-ratio: 1/1; 
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #444;
+          background: #333;
+          color: #fff;
+          border-radius: 0; 
+          
+          &:hover {
+            background: #444;
+          }
+        }
+      }
+    }
+    
+    &__tile {
+      border-radius: 0; 
+      
+      &--now {
+        background: #444 !important;
+        color: #fff !important;
+        font-weight: bold;
+        
+        &:hover {
+          background: #555 !important;
+        }
+      }
+      
+      &--active {
+        background: #555 !important;
+        color: #fff !important;
+        font-weight: bold;
+        
+        &:hover {
+          background: #555 !important;
+        }
+      }
+    }
+    
+    &__month-view__days__day {
+      &--weekend {
+        color: #bbb !important;
+        font-weight: bold;
+      }
+      
+      &--neighboringMonth {
+        color: #777 !important;
+        background: #2a2a2a !important;
+        
+        &:hover {
+          background: #3a3a3a !important;
+        }
+      }
+    }
+  }
+}
+
+.date-info {
+  padding: 15px;
+  border: 1px solid #444;
+  background-color: #2d2d2d;
+  color: #fff;
+  
+  h3 {
+    margin-top: 0;
+    color: #e0e0e0;
+  }
+}
+
+.progress-section {
+  margin-top: 20px;
+  
+  h4 {
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-size: 14px;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #444;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border: none;
+}
+// Легенда фона ячеек
+.progress-fill {
+  height: 100%;
+  transition: width 0.2s ease;
+  &.no-norm { background-color: #ffffff; }
+  &.low { background-color: #8b8b8b; }
+  &.medium { background-color: #33cc59; }
+  &.high { background-color: #ffee00; }
+  &.very-high { background-color: #f35221; }
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.no-data {
+  padding: 15px;
+  color: #ccc;
+  background: #2d2d2d;
+  border: 1px solid #444;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+}
